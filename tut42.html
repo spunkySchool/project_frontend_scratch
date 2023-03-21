@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'intro intro intro aside';
+        grid-gap: 2rem;
+        }
+        .item{
+            border: 2px solid red;
+            background-color: yellow;
+        }
+        #navbar{
+             grid-area: navbar;
+        }
+        #intro{
+             grid-area: intro;
+        }
+        #aside{
+             grid-area: aside;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+navigation bar
+        </div>
+        <div id="intro" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto tenetur quis.
+        </div>
+        <div  id="aside" class="item">
+            yep
+        </div>
+    </div>
+</body>
+</html>
